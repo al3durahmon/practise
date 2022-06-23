@@ -1,0 +1,137 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+.form__label{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+img{
+  object-fit: cover;
+}
+label:hover{
+  color: red;
+}
+label:active{
+  color: green;
+}
+.form__controller{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+hover , .form__controller:hover{
+  border: 2px solid blue;
+  cursor: pointer;
+}
+.form__controller:active{
+  border: 2px solid green;
+}
+hover , .form__controller-2:hover{
+  border: 2px solid blue;
+  cursor: pointer;
+}
+.form__controller-2:active{
+  border: 2px solid green;
+}
+hover , .form__controller-3:hover{
+  border: 2px solid blue;
+  cursor: pointer;
+}
+.form__controller:active{
+  border: 2px solid green;
+}
+hover , .form__controller-4:hover{
+  border: 2px solid blue;
+  cursor: pointer;
+}
+.form__controller:active{
+  border: 2px solid green;
+}
+.form__input:checked ~ .form__controller{
+  background-image: url("../img/table-tannis.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.form__controller-2{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.form__input:checked ~ .form__controller-2{
+  background-image: url("../img/basket-imghow.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.form__controller-3{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.form__input:checked ~ .form__controller-3{
+  background-image: url("../img/volleybol.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.form__controller-4{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+.form__input:checked ~ .form__controller-4{
+  background-image: url("../img/hokkey.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+button{
+  width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover{
+  color: white;
+  background-color: rgb(74, 168, 74);
+  border-radius: 5px;
+}
+button:active{
+  background-color: blue;
+  border-radius: 5px;
+  box-shadow: 2px 0 10px 5px rgb(82, 82, 189);
+}
